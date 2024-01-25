@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+a {
+  color: black;
+}
+label {
+  font-size: medium;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(245, 245, 245);
+  padding-top: 4.5rem;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #eeeeee;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header .navbar nav .logo span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+header .navbar nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .navbar nav {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header .navbar .menu {
+  display: flex;
+  gap: 2rem;
+}
+
+header .navbar .menu li {
+  font-weight: 400;
+  font-size: medium;
+}
+
+header .header-text-wrap {
+  display: flex;
+  justify-content: start;
+  background-color: #fff;
+  border: 2px solid #eeeeee;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 3rem;
+}
+
+header .header-text-wrap .header-text p {
+  margin: 1rem 0 1.5rem 0;
+}
+
+header .header-text-wrap .header-text p {
+  font-size: large;
+  font-weight: 500;
+  color: gray;
+}
+
+header .header-text-wrap .header-text a button {
+  font-size: small;
+  font-weight: 600;
+  background-color: aliceblue;
+  border: 0;
+  padding: 0.7rem 1.7rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+header .header-text-wrap .header-text a button:hover {
+  background-color: rgb(221, 228, 234);
+  transition-duration: 0.5s;
+}
+
+header .header-text-wrap .header-text a button:not(:hover) {
+  transition-duration: 0.5s;
+}
+
+section .section-1 {
+  justify-content: start;
+  background-color: #fff;
+  border: 2px solid #eeeeee;
+  border-radius: 1rem;
+  margin: 2rem;
+  padding: 3rem;
+}
+
+section .section-1 .content .content-nav {
+  margin-top: 1.5rem;
+  font-size: medium;
+  display: flex;
+  justify-content: center;
+}
+
+section .section-1 .content .content-nav a {
+  width: 100%;
+}
+
+section .section-1 .content .content-nav a button {
+  background-color: #eeeeee;
+  border: 0;
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: 0 2rem 2rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+section .section-1 .content {
+  display: grid;
+  gap: 2rem;
+}
+
+section .section-1 .content .content-nav a button:hover {
+  background-color: #ddd;
+  transition-duration: 0.5s;
+}
+
+section .section-1 .content .content-nav a button:not(:hover) {
+  transition-duration: 0.5s;
+}
+
+section .section-1 .content .content-nav a .persegi {
+  border-right: 0;
+  border-radius: 2rem 0 0 2rem;
+  background-color: #ddd;
+}
+
+.kalkulator {
+  justify-content: center;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  border-radius: 1.5rem;
+}
+
+.kalkulator .rumus {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kalkulator .card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.kalkulator .card .img-rumus {
+  display: flex;
+}
+
+.kalkulator .card .kalkulator-input .numInput {
+  background-color: #eeeeee;
+  border: 2px solid rgb(221, 228, 234);
+  padding: 0.5rem;
+  border-radius: 2rem 0 0 2rem;
+  margin-left: 0.5rem;
+}
+
+.kalkulator .card .kalkulator-input button {
+  background-color: aliceblue;
+  border: 2px solid rgb(221, 228, 234);
+  border-left: 0;
+  padding: 0.5rem;
+  border-radius: 0 2rem 2rem 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.kalkulator .card .kalkulator-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kalkulator .card .kalkulator-input .input {
+  display: flex;
+}
+
+.kalkulator .card .kalkulator-input .result {
+  background-color: #eeeeee;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid rgb(221, 228, 234);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.kalkulator .card .img-rumus img {
+  width: 60%;
+}
+
+.kalkulator .card .kalkulator-input .result .reset {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.kalkulator .card .kalkulator-input .reset button {
+  font-size: small;
+  font-weight: 700;
+  background-color: aliceblue;
+  border: 2 solid #eeeeee;
+  width: 100%;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.kalkulator .card .kalkulator-input .result p {
+  font-size: 1.2rem;
+}

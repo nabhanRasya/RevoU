@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project - RevoU</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <Header>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <span>Katik.</span>
+                    (<i>Kalukaltor Matematik</i>)
+                </div>
+                <ul class="menu">
+                    <li class="item"><a href="#section-1">Hitung Luas</a></li>
+                    <li class="item"><a href="#section-2">Hitung Keliling</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-text-wrap">
+            <div class="header-text">
+                <h1>Hi! Sobat, Selamat Datang Di Katik.</h1>
+                <p>Sebuah website sederhana untuk menghitung Luas dan Keliling bangun datar.</p>
+                <a href=""><button>Lainnya</button></a>
+            </div>
+        </div>
+    </Header>
+
+    <section>
+        <div id="section-1" class="section-1">
+            <h2>Hitung Luas</h2>
+            <div class="content">
+                <div class="content-nav">
+                    <a href="">
+                        <button class="persegi">
+                            <p>Persegi</p>
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="p-panjang">
+                            <p>P. Panjang</p>
+                        </button>
+                    </a>
+                </div>
+                <div class="kalkulator">
+                    <div class="rumus">
+                        <h3>Rumus luas persegi:</h3>
+                        <p>Misalnya, sebuah persegi memiliki sisi dengan panjang 5 cm. Maka, untuk menghitungnya, L = 5
+                            cm x 5 cm dari rumus L = s x s.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img-rumus">
+                            <img src="asset/persegi.png" alt="Rumus">
+                        </div>
+                        <div class="kalkulator-input">
+                            <div class="input">
+                                <label for="numInput">Masukan Sisi:</label>
+                                <input type="number" name="numInput" id="numInput1" class="numInput">
+                                <button type="submit" id="tombol">Hitung</button>
+                            </div>
+                            <div class="result">
+                                <h3>Hasil:</h3>
+                                <p>
+                                    L = <span id="sisiLuas1">s</span> x <span id="sisiLuas2">s</span> = <span
+                                        id="hasilLuas"></span>
+                                </p>
+                                <div class="reset">
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-2" class="section-1">
+            <h2>Hitung Keliling</h2>
+            <div class="content">
+                <div class="content-nav">
+                    <a href="">
+                        <button class="persegi">
+                            <p>Persegi</p>
+                        </button>
+                    </a>
+                    <a href="">
+                        <button class="p-panjang">
+                            <p>P. Panjang</p>
+                        </button>
+                    </a>
+                </div>
+                <div class="kalkulator">
+                    <div class="rumus">
+                        <h3>Rumus keliling persegi:</h3>
+                        <p>Rumus Keliling Persegi. Untuk mencari keliling bangun datar persegi, rumusnya adalah K = 4 x
+                            s.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img-rumus">
+                            <img src="asset/persegi.png" alt="Rumus">
+                        </div>
+                        <div class="kalkulator-input">
+                            <div class="input">
+                                <label for="numInput">Masukan Sisi:</label>
+                                <input type="number" name="numInput" id="numInput2" class="numInput">
+                                <button id="tombol2" type="submit">Hitung</button>
+                            </div>
+                            <div class="result">
+                                <h3>Hasil:</h3>
+                                <p>
+                                    K = 4 x <span id="sisiKel">s</span> = <span id="hasilKeliling"></span>
+                                </p>
+                                <div class="reset">
+                                    <button type="reset">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
